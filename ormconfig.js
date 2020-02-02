@@ -5,9 +5,7 @@ module.exports = {
   username: 'postgres',
   password: 'postgres',
   database: 'crud_serialization_bug_test',
-  entities: [
-    __dirname + '/**/*.entity.js'
-  ],
+  entities: [__dirname + '/src/**/*.entity.ts', __dirname + '/dist/**/*.entity.js'],
   migrations: [
     'dist/migrations/*.js'
   ],
