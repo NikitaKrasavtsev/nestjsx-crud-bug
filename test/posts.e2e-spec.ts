@@ -20,8 +20,8 @@ describe('Posts', () => {
         const repository = getRepository('Post');
         await repository.clear();
         postInsertResult = await repository.insert([
-            repository.create({id: 1, title: 'Test Post 1 title', text: 'Test Post 1 text'}),
-            repository.create({id: 2, title: 'Test Post 2 title', text: 'Test Post 2 text'}),
+            repository.create({title: 'Test Post 1 title', text: 'Test Post 1 text'}),
+            repository.create({title: 'Test Post 2 title', text: 'Test Post 2 text'}),
         ]);
     });
 
